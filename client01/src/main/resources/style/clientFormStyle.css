@@ -1,0 +1,53 @@
+.textfield {
+    -fx-border-color: #E8E8E8;
+    -fx-border-radius: 12;
+    -fx-prompt-text-fill: #727374;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-padding: 12px 16px;
+    -fx-font-family: "SansSerif";
+}
+
+.btnWhite{
+    -fx-background-color: #C7C8CC;
+}
+
+.btnRed{
+    -fx-background-color:#f44336;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #f44336;
+    -fx-cursor: Hand;
+}
+
+.btnBlue{
+    -fx-background-color:#0000FF;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #0000FF;
+    -fx-cursor: Hand;
+}
+
+.btnBlack{
+    -fx-background-color:white;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-cursor: Hand;
+}
+
+.btnGray{
+    -fx-background-color:white;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: LightGray;
+    -fx-cursor: Hand;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="700.0" styleClass="root" stylesheets="@../style/loginFormStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.client01.controller.LoginFormController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0">
+         <left>
+            <AnchorPane prefHeight="500.0" prefWidth="350.0" styleClass="sideAnchorPane" stylesheets="@../style/loginFormStyle.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="66.0" layoutY="214.0" text="Welcome back!" textFill="#eaeef4">
+                     <font>
+                        <Font name="SansSerif Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="250.0" prefHeight="228.0" prefWidth="200.0" text="Play Tech Pvt Ltd. is a dynamic company specializing in the supply of diverse gaming equipment. Renowned for its commitment to quality and innovation, Play Tech offers a wide range of gaming products that cater to the diverse needs of enthusiasts. " textAlignment="CENTER" textFill="#eaeef4" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label layoutX="48.0" layoutY="57.0" prefHeight="126.0" prefWidth="254.0" text="PLAY TECH Pvt Ltd" textAlignment="CENTER" textFill="#eaeef4" wrapText="true">
+                     <font>
+                        <Font name="SansSerif Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="500.0" prefWidth="350.0" styleClass="root" stylesheets="@../style/loginFormStyle.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="119.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #427D9D;" text="User login">
+                     <font>
+                        <Font name="Ubuntu" size="25.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtUserName" layoutX="42.0" layoutY="264.0" prefHeight="46.0" prefWidth="266.0" promptText="User Name" style="-fx-background-radius: 20px;">
+                     <font>
+                        <Font size="16.0" />
+                     </font></TextField>
+                  <FontAwesomeIconView fill="#427d9d" glyphName="USER" layoutX="138.0" layoutY="167.0" size="100" wrappingWidth="75.2857141494751" />
+                  <JFXButton buttonType="RAISED" layoutX="99.0" layoutY="340.0" onAction="#btnLoginOnAction" prefHeight="30.0" prefWidth="150.0" styleClass="btnBlue" stylesheets="@../style/loginFormStyle.css" text="Login" textFill="WHITE" />
+                  <JFXButton buttonType="RAISED" layoutX="99.0" layoutY="390.0" onAction="#btnExitOnAction" prefHeight="30.0" prefWidth="150.0" styleClass="btnRed" text="Exit" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

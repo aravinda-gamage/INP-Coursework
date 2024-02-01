@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="900.0" styleClass="root" stylesheets="@../style/loginFormStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.client01.controller.ClientFormController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="900.0">
+         <left>
+            <AnchorPane prefHeight="561.0" prefWidth="205.0" styleClass="sideAnchorPane" stylesheets="@../style/clientFormStyle.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="11.0" layoutY="14.0" prefHeight="85.0" prefWidth="184.0" text="PLAY TECH Pvt Ltd" textAlignment="CENTER" textFill="#eaeef4" wrapText="true">
+                     <font>
+                        <Font name="SansSerif Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblName" alignment="CENTER" layoutX="15.0" layoutY="190.0" prefHeight="41.0" prefWidth="175.0" textAlignment="CENTER" textFill="#d3d2d2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <FontAwesomeIconView fill="#427d9d" glyphName="USER" layoutX="77.0" layoutY="159.0" size="70" text="" textAlignment="CENTER" wrappingWidth="53.2857141494751" />
+                  <JFXButton buttonType="RAISED" layoutX="29.0" layoutY="552.0" onAction="#btnExitOnAction" prefHeight="30.0" prefWidth="150.0" styleClass="btnRed" stylesheets="@../style/clientFormStyle.css" text="Exit" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="595.0" prefWidth="689.0" styleClass="root" stylesheets="@../style/clientFormStyle.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblDate" layoutX="545.0" layoutY="14.0" prefHeight="25.0" prefWidth="119.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTIme" layoutX="431.0" layoutY="14.0" prefHeight="25.0" prefWidth="119.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="11.0" layoutY="39.0" prefHeight="435.0" prefWidth="672.0">
+                     <content>
+                        <VBox fx:id="vboxChat" prefHeight="433.0" prefWidth="669.0" />
+                     </content>
+                  </ScrollPane>
+                  <AnchorPane layoutX="4.0" layoutY="491.0" prefHeight="108.0" prefWidth="681.0" style="-fx-background-color: #C7C8CC; -fx-background-radius: 20px;">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="541.0" layoutY="55.0" onAction="#btnSendOnAction" prefHeight="45.0" prefWidth="133.0" styleClass="btnBlue" stylesheets="@../style/clientFormStyle.css" text="SEND" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <TextField fx:id="txtMessageBox" layoutX="6.0" layoutY="54.0" prefHeight="46.0" prefWidth="465.0" promptText="Message" style="-fx-background-radius: 20px;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <HBox layoutX="9.0" layoutY="4.0" prefHeight="46.0" prefWidth="557.0" spacing="25.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#btnLikeImojiOnAction" styleClass="btnWhite">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/like.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#btnHeartImojiOnAction" styleClass="btnWhite">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/love.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#btnCareImojiOnAction" styleClass="btnWhite">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/care.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#btnWowImojiOnAction" styleClass="btnWhite">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/wow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#btnHahaImojiOnAction" styleClass="btnWhite">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/haha.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#btnSadImojiOnAction" styleClass="btnWhite">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/sad.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#btnAngryImojiOnAction" styleClass="btnWhite">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/angry.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Button layoutX="476.0" layoutY="54.0" mnemonicParsing="false" onAction="#btnAddImageOnAction" styleClass="btnWhite">
+                           <graphic>
+                              <FontAwesomeIconView fill="#66708d" glyphName="IMAGE" size="40" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

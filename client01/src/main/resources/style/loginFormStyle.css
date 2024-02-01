@@ -1,0 +1,48 @@
+.root{
+    -fx-background-color: #EAEEF4;
+}
+
+.sideAnchorPane{
+    -fx-background-color: #164863;
+    -fx-background-radius: 0px 30px 30px 0px;
+}
+
+.btnRed{
+    -fx-background-color:#f44336;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #f44336;
+    -fx-cursor: Hand;
+}
+
+.btnBlue{
+    -fx-background-color:#0000FF;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #0000FF;
+    -fx-cursor: Hand;
+}
+
+.btnBlack{
+    -fx-background-color:white;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-cursor: Hand;
+}
+
+.btnGray{
+    -fx-background-color:white;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: LightGray;
+    -fx-cursor: Hand;
+}
