@@ -1,4 +1,4 @@
-package lk.ijse.client01.controller;
+package lk.ijse.client02.controller;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -20,7 +20,7 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import lk.ijse.client01.utill.DateTimeUtil;
+import lk.ijse.client02.utill.DateTimeUtil;
 
 import java.io.*;
 import java.net.Socket;
@@ -138,7 +138,7 @@ public class ClientFormController extends Thread {
 
                     else {
                         Text text1 = new Text(fullMsg + ": Me");
-                        text.setFont(Font.font(16));
+                        text1.setFont(Font.font(16));
                         TextFlow textFlow2 = new TextFlow(text1);
                         hBox.setAlignment(Pos.BOTTOM_RIGHT);
                         hBox.getChildren().add(textFlow2);
@@ -166,31 +166,24 @@ public class ClientFormController extends Thread {
     }
 
     public void btnLikeImojiOnAction(ActionEvent actionEvent) {
-        txtMessageBox.appendText("\uD83D\uDC4D");
     }
 
     public void btnHeartImojiOnAction(ActionEvent actionEvent) {
-        txtMessageBox.appendText("\u2764");
     }
 
     public void btnCareImojiOnAction(ActionEvent actionEvent) {
-        txtMessageBox.appendText("\uD83E\uDD17");
     }
 
     public void btnWowImojiOnAction(ActionEvent actionEvent) {
-        txtMessageBox.appendText("\uD83D\uDE32");
     }
 
     public void btnHahaImojiOnAction(ActionEvent actionEvent) {
-        txtMessageBox.appendText("\uD83D\uDE02");
     }
 
     public void btnSadImojiOnAction(ActionEvent actionEvent) {
-        txtMessageBox.appendText("\uD83D\uDE2D");
     }
 
     public void btnAngryImojiOnAction(ActionEvent actionEvent) {
-        txtMessageBox.appendText("\uD83D\uDE20");
     }
 
     public void btnAddImageOnAction(ActionEvent actionEvent) {
