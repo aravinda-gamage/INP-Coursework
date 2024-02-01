@@ -166,24 +166,31 @@ public class ClientFormController extends Thread {
     }
 
     public void btnLikeImojiOnAction(ActionEvent actionEvent) {
+        txtMessageBox.appendText("\uD83D\uDC4D");
     }
 
     public void btnHeartImojiOnAction(ActionEvent actionEvent) {
+        txtMessageBox.appendText("\u2764");
     }
 
     public void btnCareImojiOnAction(ActionEvent actionEvent) {
+        txtMessageBox.appendText("\uD83E\uDD17");
     }
 
     public void btnWowImojiOnAction(ActionEvent actionEvent) {
+        txtMessageBox.appendText("\uD83D\uDE32");
     }
 
     public void btnHahaImojiOnAction(ActionEvent actionEvent) {
+        txtMessageBox.appendText("\uD83D\uDE02");
     }
 
     public void btnSadImojiOnAction(ActionEvent actionEvent) {
+        txtMessageBox.appendText("\uD83D\uDE2D");
     }
 
     public void btnAngryImojiOnAction(ActionEvent actionEvent) {
+        txtMessageBox.appendText("\uD83D\uDE20");
     }
 
     public void btnAddImageOnAction(ActionEvent actionEvent) {

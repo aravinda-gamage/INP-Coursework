@@ -138,7 +138,7 @@ public class ClientFormController extends Thread {
 
                     else {
                         Text text1 = new Text(fullMsg + ": Me");
-                        text.setFont(Font.font(16));
+                        text1.setFont(Font.font(16));
                         TextFlow textFlow2 = new TextFlow(text1);
                         hBox.setAlignment(Pos.BOTTOM_RIGHT);
                         hBox.getChildren().add(textFlow2);
